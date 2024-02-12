@@ -1,0 +1,77 @@
+#videos {
+    /* Positioning and Layout */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.videos-container{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 3rem;
+
+}
+
+.cards-videos{
+    margin-bottom: 2rem;
+    cursor: pointer;
+    border: 1px solid var(--blue);
+    box-shadow: 0 0 5px var(--blue); 
+    border-radius: var(--borderRadius);
+    padding: 10px;
+    width: 30vw;
+    max-height: 600px;
+}
+
+.video > iframe {
+    background-color: grey;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.videos-team-name{
+    margin: 1rem;
+    font-family: var(--Subtitle);
+    color: var(--white) ;
+    font-size: 1rem;
+}
+
+.videos-description{
+    margin: 1rem;
+    font-family: var(--Subtitle);
+    color: var(--white) ;
+    font-size: 0.8rem;
+}
+
+
+
+
+/* ______________________________________________________________________________ */
+/*__________________________MEDIA QUERIES (Mobile-First)__________________________*/
+
+/*________ MIN WIDTH 1023px ________*/
+@media all and (min-width: 1023px) {
+
+}
+/*________ MAX WIDTH 1023px ________*/
+@media all and (max-width: 1023px) {  
+}
+/*________ MAX WIDTH 768px ________*/
+@media all and (max-width: 768px) {
+}
+
+/*________ MAX WIDTH 550px ________*/
+@media all and (max-width: 550px) {
+    .videos-container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+/*________ MAX WIDTH 390px ________*/
+@media all and (max-width: 390px) {
+
+}

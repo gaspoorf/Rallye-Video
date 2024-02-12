@@ -1,0 +1,40 @@
+/* VAR */
+/*________ LISTS ________*/
+:root {
+    /* Colors */
+    --blue: #8ad4e7;
+    --darkerBlue: #71afbe;
+    --lightBlue: #caf1f8;
+    --green: #32b782;
+    --darkerGreen : #258e64;
+    --red: #a31f25;
+    --darkerRed: #7d171c;
+    --midBlue: #3c5c66;
+    --darkBlue: #2B4249;
+    --cream: #FAE8C2;
+    --darkerCream: #e9d5ac;
+    
+    --newGrey: #5d5d5d;
+    --darkerGrey : #474747;
+    --darkerDarkGrey : #242424;
+
+    --orange: #E36B36;
+    --grey: #38383D;
+    --black: #000000;
+    --white: #FFFFFF;
+    --lightGrey: #eeeeee;
+
+
+    /* Fonts */
+    --title: 'kaviron_freeregular', sans-serif;
+    --subTitle: 'Montserrat', sans-serif;
+    --text: 'Montserrat', sans-serif;
+
+    /* Border radius */
+    --borderRadius: 1rem;
+
+    /* Drop shadow filter */
+    --dropShadow2px: drop-shadow(0px 0px 2px var(--blue));
+    /* Drop shadow filter */
+    --dropShadow5px: drop-shadow(0px 0px 5px var(--blue));
+}

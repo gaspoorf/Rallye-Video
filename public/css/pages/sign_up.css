@@ -1,0 +1,158 @@
+#sign-up {
+    /* Positioning and Layout */
+    display: flex;
+    justify-content: center;
+    height: 100%; 
+}
+#sign-up > div {
+    /* Box Model */
+    width: 30rem;
+}
+#sign-up > div > div {
+    /* Borders, Effects and Backgrounds */
+    border: 1px solid var(--blue);
+    border-radius: var(--borderRadius);
+    box-shadow: 0px 0px 10px var(--blue); 
+}
+
+
+
+/* ________________________________________ */
+/* ______________SIGN UP H1_____________ */
+
+#sign-up h1 {
+    /* Typography */
+    font-size: 2.6rem;
+
+    /* Borders, Effects and Backgrounds */
+    color: var(--white);
+    border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+
+    /* Box Model */
+    padding-top: 3.2rem;
+    padding-bottom: 1rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+}
+
+
+
+/* _______________________________________ */
+/* ______________SIGN UP FORM_____________ */
+
+#sign-up form {
+    /* Box Model */
+    width: 100%;
+    padding: 3rem;
+    padding-top: 2rem;
+}
+#sign-up form > div:nth-child(1), #sign-up form > div:nth-child(2) {
+    /* Positioning and Layout */
+    position: relative;
+    display: grid;
+    grid-gap: 0.8rem;
+}
+#sign-up form > div:nth-child(2) {
+    /* Box Model */
+    display: none;
+}
+#sign-up input {
+    /* Box Model */
+    padding: 1rem;
+    padding-right: 0;
+    padding-left: 0;
+    
+
+    /* Borders, Effects and Backgrounds */
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--blue);
+}
+
+
+
+
+/* ________________________________________ */
+/* ______________PLAYERS INPUT_____________ */
+
+#sign-up #team-players-container {
+    /* Positioning and Layout */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+
+
+/* _________________________________________________ */
+/* ______________SIGN UP SUBMIT BUTTONS_____________ */
+
+#sign-up input[type=submit], #sign-up .submit-btn {
+    /* Box Model */
+    padding: 0.8rem 0.8rem;
+    margin-top: 0.6rem; 
+
+    /* Borders, Effects and Backgrounds */
+    border: 1px solid var(--blue);
+    border-radius: var(--borderRadius);
+    background: var(--blue);
+    box-shadow: 0px 0px 10px var(--blue);
+    color: var(--black);
+}
+
+#sign-up .submit-btn {
+    margin-top: 1.2rem;
+    background: var(--blue);
+}
+#sign-up #prev-for-submit {
+    background: var(--darkerGrey);
+    color: var(--white);
+    box-shadow: none;
+    border: none;
+}
+
+
+#sign-up form > div:nth-child(2) > div:nth-child(2) {
+    /* Box Model */
+    display: grid;
+    grid-gap: 0.2rem;
+
+    margin-top: 1rem;
+}
+
+
+
+
+/* ______________________________________________________________________________ */
+/*__________________________MEDIA QUERIES (Mobile-First)__________________________*/
+
+/*________ MIN WIDTH 1023px ________*/
+@media all and (min-width: 1023px) {
+
+}
+/*________ MAX WIDTH 1023px ________*/
+@media all and (max-width: 1023px) {
+    #sign-up #team-players-container {
+        /* Positioning and Layout */
+        grid-template-columns: repeat(2, 1fr);
+    }   
+}
+/*________ MAX WIDTH 768px ________*/
+@media all and (max-width: 768px) {
+    #sign-up #team-players-container {
+        /* Positioning and Layout */
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+    }   
+}
+
+/*________ MAX WIDTH 550px ________*/
+@media all and (max-width: 550px) {
+    #sign-up {
+        text-align: center;
+    }
+}
+
+/*________ MAX WIDTH 390px ________*/
+@media all and (max-width: 390px) {
+}

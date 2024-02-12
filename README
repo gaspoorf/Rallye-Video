@@ -1,0 +1,115 @@
+# RALLYE VIDEO - SAE 303
+
+This is a web project. To be completed.
+
+
+## Table of Contents
+
+- [SET UP .ENV FILE]
+- [NAMING STANDARDS]
+- [CSS CODE STANDARDS]
+
+
+
+
+/* ___________________________________________________________________________________
+/* ___________________________ SET UP .ENV FILE ______________________________________
+
+    - Please copy and paste '.env.example' file content inside a new file called '.env'. 
+    - Put this file at the project root and adjust the value for your environment.
+
+
+
+
+/* ___________________________________________________________________________________
+/* ___________________________ NAMING STANDARDS ______________________________________
+
+    Names and codification used in this project. Langage used must be English. :
+   
+    HTML:
+        - Classes, attributs (alts, titles, aria-labels), Ids and input names : .kebab-case
+        - Quotes : "double quotes"
+    
+    CSS:
+        - Vars : var(--camelCase).
+        - Use a space after the colon in property declarations.
+        - Use a semicolon after each property declaration.
+        - Use a space between selectors and the opening brace.
+        - Use a new line for each selector and declaration.
+    
+    JavaScript:
+        - Var, let, functions = let camelCase.
+        - Constants = const UPPERCASE_SNAKE_CASE.
+        - Class and constructor names : PascalCase.
+        - Quotes : 'single quotes'.
+        - Prioritise let over var for variable declarations.
+        - Prioritise arrow functions instead of function expressions where possible.
+        - Use meaningful variable and function names.
+    
+    PHP:
+        - Variables : $camelCase.
+        - Constants : define('UPPERCASE_SNAKE_CASE', 'value').
+        - Functions : function camelCase().
+        - Classes : class PascalCase.
+        - Quotes : 'single quotes'.
+        - Use meaningful variable and function names.
+    
+
+
+/* ___________________________________________________________________________________
+/* ___________________________ CSS CODE STANDARDS ______________________________________
+
+    Please use and keep in mind the CSS Code Standard below for this project :
+
+    /* ______________________________________ ELEMENTS ______________________________________ : *
+
+    /* Box Model */
+    /* Positioning and Layout */
+    /* Typography */
+    /* Borders, Effects and Backgrounds */
+    /* Others */
+
+    /* ______________________________________ EXAMPLE ______________________________________ : *
+
+    /* MY FILE */
+    /*________ MY ELEMENTS, MY ELEMENTS HOVER ________*/
+    .my-element {
+        /* Box Model*/
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        padding: 20px;
+        
+        /* Positioning and Layout */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        /* Typography */
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: center;
+        text-transform: uppercase;
+        color: #333;
+
+        /* Borders, Effects and Backgrounds */
+        border: 2px solid #333;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+        background-image: url('image.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        
+        /* Others */
+        transform: rotate(45deg);
+        transition: transform 0.3s ease;
+    }
+  

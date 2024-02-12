@@ -1,0 +1,144 @@
+/*________ HEADER ________*/
+header {
+    position: fixed;
+    top: 0;
+    height: 100px;
+
+    /* Box Model */
+    width: 100%;
+    padding: 2rem 3rem;
+
+    /* Typography */
+    font-family: var(--subTitle);
+    background-color: var(--black);
+    z-index: 2;
+}
+
+
+/*________ NAV ________*/
+nav {
+    /* Box Model */
+    width: 100%;
+
+    /* Borders, Effects and Backgrounds */
+    background-color: var(--black);
+
+    /* Others */
+    z-index: 4;
+}
+
+
+/*________ HEADER LOGO ________*/
+.header-logo {
+    width: 8rem;
+    transition: all 0.3s;
+    filter: grayscale(100%);
+}
+.header-logo:hover {
+    /* Others */
+    transition: all 0.3s;
+    filter: grayscale(100%) brightness(0.5);
+}
+.header-logo:active {
+    /* Others */
+    transition: all 0.3s;
+    transform: scale(0.8);
+}
+.header-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*________ HEADER UL ________*/
+header ul {
+    gap: 0.6rem;
+    list-style: none;
+}
+header ul li {
+    z-index: 3;
+}
+header ul li a {
+    height: 1rem;
+}
+
+
+/* ______ LIVE BUTTON _____ */
+#live-button {
+    gap: 0.6rem;
+}
+
+#live-button span {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background-color: var(--red);
+    box-shadow: 0px 0px 1rem var(--red);
+
+    cursor: pointer;
+}
+
+
+/* _____ BURGER _____ */
+#burger {
+    padding: 0.5rem;
+    border-radius: var(--borderRadius);
+    background: var(--darkerGrey);
+    border: none;
+}
+#burger:hover {
+    background: var(--darkerDarkGrey);
+    
+    transition: 0.2s;
+}
+#burger img {
+    height: 100%;
+    width: 100%;
+    filter: invert(100%);
+}
+
+
+
+
+/* ______________________________________________________________________________ */
+/*__________________________MEDIA QUERIES (Mobile-First)__________________________*/
+
+/*________ MIN WIDTH 1023px ________*/
+@media all and (min-width: 1023px) {
+    /*________ HEADER ________*/
+    header {
+        padding: 2rem 3rem;
+    }
+}
+/*________ MAX WIDTH 1023px ________*/
+@media all and (max-width: 1023px) {
+    /*________ HEADER ________*/
+    header {
+        padding: 2.2rem 3rem;
+    }
+}
+/*________ MAX WIDTH 768px ________*/
+@media all and (max-width: 768px) {
+    /*________ HEADER ________*/
+    header {
+        padding: 2.2rem 3rem;
+    }
+    nav.flex-between-row  {
+        flex-wrap: wrap;
+    }
+}
+
+/*________ MAX WIDTH 550px ________*/
+@media all and (max-width: 550px) {
+}
+
+/*________ MAX WIDTH 390px ________*/
+@media all and (max-width: 390px) {
+    nav.flex-between-row  {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}

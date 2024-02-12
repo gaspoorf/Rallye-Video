@@ -1,0 +1,204 @@
+#home h1 {
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+    padding-bottom: 1rem;
+
+    font-weight: 300;
+    filter: drop-shadow(0px 0px 3px var(--white));
+    color: var(--lightGrey);
+
+    animation: glitch 4s linear infinite;
+}
+
+#home h1:before, #home h1:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+}
+#home h1:before{
+    animation: glitchTop 4s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+#home h1:after{
+    animation: glitchBottom 6s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+.card h2 {
+    color: var(--white);
+    padding-bottom: 0.6rem;
+    letter-spacing: -4px;
+
+    filter: var(--dropShadow);
+}
+.cards-container {
+    gap: 2.5rem;
+}
+.card img, .card-reflection {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    filter: grayscale(1) brightness(0.6);
+    transition: all 0.5s;
+}
+.card img {
+    animation: glitchImg 4s linear infinite;
+}
+.card-reflection {
+    animation: glitchReflection 4s linear infinite;
+}
+.card:nth-of-type(1) img, .card:nth-of-type(1) .card-reflection {
+    animation-delay: 0s;
+}
+.card:nth-of-type(2) img, .card:nth-of-type(2) .card-reflection  {
+    animation-delay: 3s;
+}
+.card:nth-of-type(3) img, .card:nth-of-type(3) .card-reflection {
+    animation-delay: 6s;
+}
+.card {
+    position: relative;
+    transition: all 0.4s;
+}
+.inside-card {
+    position: relative;
+    transition: all 0.4s;
+}
+.card:not(#event-card):active, .inside-card:active {
+    transform: scale(.95);
+    transition: all 0.4s;
+}
+.card a:hover ~ .card-reflection, .card a:hover img  {
+    filter: grayscale(.4) brightness(1);
+    transition: all 0.5s;
+}
+.card-reflection {
+    transform: scaleY(-1);
+    position: absolute;
+    top: 102%;
+    width: 100%;
+    height: 30%;
+}
+.card-reflection::before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+#event-card-reflection::after {
+    background-image: url('../../images/cards/event.svg');
+}
+#videos-card-reflection::after {
+    background-image: url('../../images/cards/videos.svg');
+}
+#teams-card-reflection::after {
+    background-image: url('../../images/cards/teams.svg');
+}
+#event-card-reflection::after, #videos-card-reflection::after, #teams-card-reflection::after {
+    content: '';
+    opacity: 0.8;
+    position: absolute;
+    width: 175px;
+    margin: auto;
+    top: 0;
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#event-card {
+    gap: 1.2rem;
+}
+
+
+
+
+/* COUNTDOWN */
+#countdown {
+    user-select: none;
+    -webkit-user-select: none;
+
+    /* Box Model */
+    box-sizing: border-box;
+    height: 1.6rem;    
+
+    /* Typography */
+    color: var(--white);
+    font-family: var(--text);
+    font-size: 1rem;
+    text-align: center;
+
+    /* Borders, Effects and Backgrounds */
+    border-radius: var(--borderRadius);
+    box-shadow: inset 0px 0px 10px var(--blue);
+    filter: var(--dropShadow);
+    border: 1.5px solid var(--blue);
+    background: var(--black);
+    width: 15rem;
+
+    /* Others */
+    transition: all 0.4s;
+    padding: 1.6rem 1rem;
+}
+
+
+
+
+/* ______________________________________________________________________________ */
+/*__________________________MEDIA QUERIES (Mobile-First)__________________________*/
+
+/*________ MIN WIDTH 1023px ________*/
+@media all and (min-width: 1023px) {
+}
+/*________ MAX WIDTH 1023px ________*/
+@media all and (max-width: 1023px) {
+}
+/*________ MAX WIDTH 768px ________*/
+@media all and (max-width: 768px) {
+    nav.flex-between-row  {
+        flex-wrap: wrap;
+    }
+    .cards-container.flex-center-start-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #countdown {
+        position: fixed;
+        top: 90%;
+        z-index: 2;
+    }
+    .card img {
+        width: 250px;
+        height: 50px;
+        object-position: center;
+        object-fit: cover;
+    }
+    #event-card-reflection::after, #videos-card-reflection::after, #teams-card-reflection::after {
+        width: 250px;
+        background-position: center;
+        background-size: cover;
+    }
+    .card-reflection {
+        top: 105%;
+    }
+}  
+/*________ MAX WIDTH 550px ________*/
+@media all and (max-width: 550px) {
+    #home h1 {
+        display: none;
+    }
+}
+/*________ MAX WIDTH 390px ________*/
+@media all and (max-width: 390px) {
+}

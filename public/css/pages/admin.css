@@ -1,0 +1,209 @@
+#admin {
+    /* Positioning and Layout */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/*________ TITLE H1 ________*/
+#admin h1 {
+    /* Positioning and Layout */
+    margin-top: 150px;
+    
+    /* Typography */
+    color: var(--white);
+    font-size: 100px;
+    font-family: var(--title);
+    filter: var(--dropShadow2px);
+}
+
+
+.admin-infos p {
+    color: #666666;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+
+
+.admin-infos {
+    text-align: center;
+}
+
+
+
+
+
+
+form {
+    margin-top: 20px;
+    max-width: 400px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: var(--borderRadius);
+}
+
+
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.video-form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: var(--borderRadius);
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*________ TITLE H2 ________*/
+#admin h2 {
+    font-family: var(--title);
+    /* Typography */
+    color: var(--white) ;
+    font-size: 24px;
+}
+
+
+
+
+/*________ DISPLAY TEAMS ________*/
+
+
+.team-container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+
+.team-container ul{
+    margin-top: 2rem;
+
+}
+
+.team-container-name {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.team-item {
+    list-style: none;
+    border: 1px solid var(--blue);
+    box-shadow: 0 0 5px var(--blue); 
+    border-radius: var(--borderRadius);
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 30rem;
+}
+
+.btn-pad{
+    padding: 0.3rem;
+}
+
+#file-path-input label{
+    color: var(--white);
+    font-family: var(--subTitle);
+}
+
+#file-path-input input{
+    border-color: var(--blue);
+    box-shadow: 0 0 5px var(--blue); 
+    border-radius: var(--borderRadius);
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.team-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.team-details {
+    display: none;
+    flex-direction: column;    
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    gap: 5px;
+    color: var(--white);
+    font-family: var(--subTitle);
+    padding: 15px 10px 10px 10px;
+}
+
+
+.team-details p,
+.team-details span {
+    color: var(--white);
+    font-family: var(--subTitle);
+}
+
+
+
+.team-name {
+    font-weight: bold;
+}
+
+.team-details span{
+    font-size: 1rem;
+}
+.video-infos span{
+    font-size: 1rem;
+}
+.team-toggle,
+.team-name,
+.team-email {
+    font-size: 1.1rem;
+    color: var(--white);
+    font-family: var(--subTitle);
+}
+
+.team-toggle {
+    cursor: pointer;
+}
+
+.member-list {
+    font-size: 1rem;
+}
+
+.member-list,
+.video-title,
+.video-description,
+.video-filename,
+.upload-date,
+.no-video {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+}
+

@@ -1,0 +1,129 @@
+/* ANIMATIONS */
+/*________ APPEAR ________*/
+@keyframes appear {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    1% {
+        visibility: visible;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+/*________ ALERT ________*/
+@keyframes alert {
+    0% {
+        transform: translateX(-50%);
+        left: 100%;
+        opacity: 0;
+    }
+    5% {
+        transform: translateX(-50%);
+        left: 80%;
+        opacity: 0.9;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    99% {
+        pointer-events: all;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+/*________ DISAPPEAR ________*/
+@keyframes disappear {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    99% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.appear {
+    animation: appear 0.3s ease-in-out forwards;
+}
+.disappear {
+    animation: disappear 0.3s ease-in-out forwards;
+}
+
+/*________ GLITCH ________*/
+@keyframes glitch{
+    2%, 59% {
+        transform: translate(1px,0);
+        color: var(--lightGrey);
+    }
+    60%, 64% {
+        transform: translate(-1px,0);
+        color: var(--lightBlue);
+    }
+    65%, 94% {
+        transform: translate(0,0); 
+        color: var(--lightGrey);
+    }
+    95%, 100% {
+        transform: translate(0,0); 
+        color: var(--lightGrey);
+    }
+}
+/*________ GLITCH TOP ________*/
+@keyframes glitchTop{
+    2%,64%{
+        transform: translate(1px,-1px);
+    }
+    4%,60%{
+        transform: translate(-1px,1px);
+    }
+    62%{
+        transform: translate(1px,-1px); 
+    }
+}
+/*________ GLITCH BOTTOM ________*/
+@keyframes glitchBottom{
+    2%,64%{
+        transform: translate(-1px,0);
+    }
+    4%,60%{
+        transform: translate(-1px,0);
+    }
+    62%{
+        transform: translate(-22px,1px); 
+    }
+}
+/*________ GLITCH IMAGE ________*/
+@keyframes glitchImg {
+    2%, 64% {
+        transform: translate(-1px, 0);
+    }
+    4%, 60% {
+        transform: translate(-1px, 0);
+    }
+    62% {
+        transform: translate(-12px, 1px);
+    }
+}
+/*________ GLITCH REFLECTION ________*/
+@keyframes glitchReflection {
+    2%, 64% {
+        transform: translate(-1px, 0) scaleY(-1);
+    }
+    4%, 60% {
+        transform: translate(-1px, 0) scaleY(-1);
+    }
+    62% {
+        transform: translate(-12px, 1px) scaleY(-1);
+    }
+}

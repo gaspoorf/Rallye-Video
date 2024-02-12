@@ -1,0 +1,74 @@
+/*________ ALERT POPUP ________*/
+#alert-popup {
+    /* Box Model */
+    width: 35vw;
+    padding: 1rem 2rem;
+
+    /* Positioning and Layout */
+    /* flex-between-row in html */
+    position: fixed;
+    top: 20%;
+    left: 80%;
+    transform: translateX(-50%);
+
+    /* Typography */
+    text-align: center;
+    color: var(--white);
+    user-select: none;
+
+    /* Borders, Effects and Backgrounds */
+    border-radius: var(--borderRadius);
+    background-color: var(--black);
+
+    /* Others */
+    cursor: pointer;
+    transition: all 0.3s;
+    animation: alert 6s ease-in-out forwards;
+    z-index: 2;
+}
+#alert-popup:active {
+    /* Others */
+    transform: translateX(-50%) scale(0.9);
+    transition: all 0.3s;
+}
+
+/*________ ALERT POPUP SVG ________*/
+#alert-popup svg {
+    /* Box Model */
+    width: auto;
+    height: 1rem;
+
+    /* Others */
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+/*________ ALERT ERROR ________*/
+.alert-error {
+    /* Borders, Effects and Backgrounds */
+    background: black;
+    border: 2px solid var(--red);
+    box-shadow: inset 0px 0px 40px var(--red);
+    transition: all 0.4s;
+}
+.alert-error:hover {
+    border: 2px solid var(--darkerRed);
+    box-shadow: inset 0px 0px 40px var(--darkerRed);
+    /* Others */
+    transition: all 0.4s;
+}
+
+/*________ ALERT SUCCESS ________*/
+.alert-success {
+    /* Borders, Effects and Backgrounds */
+    background: black;
+    border: 2px solid var(--green);
+    box-shadow: inset 0px 0px 40px var(--green);
+    transition: all 0.4s;
+}
+.alert-success:hover {
+    border: 2px solid var(--darkerGreen);
+    box-shadow: inset 0px 0px 40px var(--darkerGreen);
+    /* Others */
+    transition: all 0.4s;
+}

@@ -1,0 +1,70 @@
+/* _____ MODEL BUTTONS _____ */
+.model-btn {
+    /* Box Model */
+    height: 2.4rem;
+    padding: 0.6rem 1rem;
+    border-radius: var(--borderRadius);
+
+    /* Typography */
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: var(--text);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+
+    /* Others */
+    user-select: none;
+    -webkit-user-select: none;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+
+
+
+/* _____ BLUE EMPTY BUTTON _____ */
+.blue-empty-btn {
+    /* Borders, Effects and Backgrounds */
+    filter: drop-shadow(0px 0px 2px var(--blue));
+    border: 1.5px solid var(--blue);
+    background: var(--black);
+}
+.blue-empty-btn:hover {
+    /* Borders, Effects and Backgrounds */
+    box-shadow: inset 0px 0px 2rem var(--blue);
+    
+    /* Others */
+    transition: all 0.4s;
+}
+.blue-empty-btn:active {
+    /* Others */
+    transition: all 0.4s;
+    transform: scale(0.95);
+}
+
+
+
+/* _____ RED EMPTY BUTTON _____ */
+.red-empty-btn {
+    /* Borders, Effects and Backgrounds */
+    filter: drop-shadow(0px 0px 2px var(--red));
+    border: 1.5px solid var(--red);
+    background: var(--black);
+}
+.red-empty-btn:hover {
+    /* Borders, Effects and Backgrounds */
+    box-shadow: inset 0px 0px 2rem var(--red);
+    
+    /* Others */
+    transition: all 0.4s;
+}
+.red-empty-btn:active {
+    /* Others */
+    transition: all 0.4s;
+    transform: scale(0.95);
+}
+
+
+

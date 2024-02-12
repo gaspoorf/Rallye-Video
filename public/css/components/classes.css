@@ -1,0 +1,49 @@
+/*  CLASSES */
+/*________ FLEX CENTER ROW ________*/
+.flex-center-row {
+    /* Positioning and Layout */
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*________ FLEX CENTER COLUMN ________*/
+.flex-center-col {
+    /* Positioning and Layout */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*________ FLEX BETWEEN ROW ________*/
+.flex-between-row {
+    /* Positioning and Layout */
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*________ FLEX START ROW ________*/
+.flex-start-row {
+    /* Positioning and Layout */
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*________ FLEX CENTER START ROW ________*/
+.flex-center-start-row {
+    /* Positioning and Layout */
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+/*________ FLEX START COL ________*/
+.flex-start-col {
+    /* Positioning and Layout */
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

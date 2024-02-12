@@ -1,0 +1,46 @@
+/*  FORM */
+/*________ FORM ________*/
+form {
+    /* Box Model */
+    display: grid;
+    grid-gap: 1rem;
+}
+
+form * {
+    outline: none;
+}
+
+input {
+    font-family: var(--text);
+    font-size: 0.9rem;
+    color: var(--white);
+}
+
+#show-hide {
+    /* Typography */
+    font-family: var(--text);
+    font-size: 0.9rem;
+    color: var(--white);
+
+    /* Box Model */
+    padding-top: 10px;
+
+    /* Others */
+    cursor: pointer;
+}
+
+input[type="submit"], .submit-btn {
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
+#form-links {
+    display: block;
+    margin-top: 0.6rem;
+
+    /* Typography */
+    color: var(--white);
+    text-decoration: underline;
+    cursor: pointer;
+}

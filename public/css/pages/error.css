@@ -1,0 +1,14 @@
+#error {
+    /* Positioning and Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#error h1 {
+    padding-bottom: 1.5rem;
+}
+#error p {
+    text-align: center;
+}

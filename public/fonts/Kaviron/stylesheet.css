@@ -1,0 +1,10 @@
+/*  STYLESHEET */
+/*________ KAVIRON ________*/
+@font-face {
+    font-family: 'kaviron_freeregular';
+    src: url('kaviron_free-webfont.woff2') format('woff2'),
+         url('kaviron_free-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
